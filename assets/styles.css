@@ -1,16 +1,7 @@
-@font-face {
-    font-family: "ZenKaku";
-    src: url("./font/ZenKakuGothicAntique-Light.ttf");
-    src: url("./font/ZenKakuGothicAntique-Medium.ttf"),
-    url("./font/ZenKakuGothicAntique-Regular.ttf"),
-    url("./font/ZenKakuGothicAntique-Black.ttf"),
-    url("./font/ZenKakuGothicAntique-Bold.ttf");
-    }
-    
 body{
     padding: 0;
     margin: 0 auto;
-    font-family: 'ZenKaku', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #4e1e14;
     font-weight: 200;
     line-height: 1;
@@ -37,7 +28,7 @@ footer a{
     margin: 10px;
 }
 h1{
-    font-weight: 200;
+    font-weight: 400;
     font-size: 3em;
     margin: 0;
     z-index: 1;
