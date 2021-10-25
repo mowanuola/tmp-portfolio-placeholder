@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "ZenKaku";
+    src: url("./font/ZenKakuGothicAntique-Light.ttf");
+    src: url("./font/ZenKakuGothicAntique-Medium.ttf"),
+    url("./font/ZenKakuGothicAntique-Regular.ttf"),
+    url("./font/ZenKakuGothicAntique-Black.ttf"),
+    url("./font/ZenKakuGothicAntique-Bold.ttf");
+    }
+    
+body{
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'ZenKaku', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4e1e14;
+    font-weight: 200;
+    line-height: 1;
+    overflow-x: hidden;
+   
+}
+nav{
+    background-color: #699581;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 4px 10px ;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+footer a, .twr-cta a{
+    color: #699581;
+}
+footer a{
+    margin: 10px;
+}
+h1{
+    font-weight: 200;
+    font-size: 3em;
+    margin: 0;
+    z-index: 1;
+}
+.hero-section {
+    position: relative; 
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+.asset{
+    padding: 10px;
+    background: rgb(129 85 169 / 20%);
+}
+.inner{
+    padding: 15px;
+}
+
+.inner a.link{
+    color: #8155a9;
+    font-weight: bold;
+}
+.inner span{
+    line-height: 2;
+}
+.squigly{
+    text-decoration: underline wavy rgba(238,111,87,1);
+    line-height: 2;
+}
+
+img.nav-img{
+    border-radius: 50%;
+    width: 50px;
+}
+.nav-link{
+    margin: auto 0;
+}
+.nav-link .link{
+    color: white;
+}
+.link{
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+ a.link:hover::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 80px;
+  height: 14px;
+  transform: translateX(0);
+  transform-origin: left;
+  transition: .3s;
+  background: rgba(238,111,87,0.3);
+}
+footer a.link:hover::before{
+    bottom: 1px;
+    width: 20px;
+    height: 15px;
+}
+.inner a.link:hover::before{
+    width: 100px;
+    height: 15px;
+}
+.twr-cta a.link:hover::before{
+    bottom: 1px;
+    width: 40px;
+    height: 15px;
+}
+span.asset{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+}
+@media (max-width: 576px) {
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    img.nav-img{
+        display: none;
+    }
+    nav{
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+    span.asset{
+        position: fixed;
+    }
+}
+@media (max-width: 375px) {
+    span.asset{
+        display: none;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .hero-section {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 576px) {
+    nav{
+        width: 100%;
+    }
+}
+
