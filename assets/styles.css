@@ -59,6 +59,7 @@ h1{
 .squigly{
     text-decoration: underline wavy rgba(238,111,87,1);
     line-height: 2;
+    font-size: 1.3em;
 }
 
 img.nav-img{
