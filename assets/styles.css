@@ -41,6 +41,10 @@ h1{
     padding: 20px;
     margin: 20px;
 }
+.hero-section.spotify{
+    padding: 0;
+    margin: 0;
+}
 .asset{
     padding: 10px;
     background: rgb(129 85 169 / 20%);
@@ -104,6 +108,10 @@ footer a.link:hover::before{
     width: 40px;
     height: 15px;
 }
+.twr{
+    font-weight: 500;
+    font-style:italic
+}
 span.asset{
     width: 30px;
     height: 30px;
@@ -131,6 +139,9 @@ span.asset{
     }
     span.asset{
         position: fixed;
+    }
+    .hero-section p{
+        line-height: initial;
     }
 }
 @media (max-width: 375px) {
